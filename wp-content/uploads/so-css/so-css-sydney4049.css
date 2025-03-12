@@ -1,0 +1,210 @@
+#members.panel-row-style.panel-row-style-for-30-1 {
+  margin-bottom: -80px;
+}
+
+.lsow-accordion.style2 .lsow-panel.lsow-active .lsow-panel-title {
+  background: #083766 !important;
+}
+
+.lsow-accordion.style2 .lsow-panel .lsow-panel-title:before {
+  background: #083766 !important;
+}
+
+#pl-10 #panel-10-1-0-0 {
+  margin: 80px 10px;
+}
+
+#pl-24 .panel-grid-cell {
+  padding: 0 0 30px 0;
+  margin-bottom: 60px;
+}
+
+#pl-26 #panel-26-1-0-3,
+#pl-26 #panel-26-1-0-4 {
+  margin: 0px 60px;
+  padding-bottom: 0px;
+}
+
+#pg-10-2 {
+  margin-bottom: 80px;
+}
+
+#pg-24-0 {
+  margin-bottom: 0px;
+}
+
+#publications {
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 780px) {
+  #publications {
+    margin-bottom: 0px;
+  }
+
+  .panel-grid-cell {
+    padding: 0px !important;
+  }
+
+  #pl-10 #panel-10-1-0-0 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-24 #panel-24-1-0-0 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-24 #panel-24-1-0-1 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-24 #panel-24-1-0-1 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-24 #panel-24-1-0-2 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-26 #panel-26-1-0-1,
+  #pl-26 #panel-26-1-0-2 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-26 #panel-26-1-0-1,
+  #pl-26 #panel-26-1-0-2 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-26 #panel-26-1-0-3,
+  #pl-26 #panel-26-1-0-4 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pl-26 #panel-26-1-0-3,
+  #pl-26 #panel-26-1-0-4 {
+    margin: 0px 10px;
+    padding: 10px !important;
+  }
+
+  #pg-10-2 {
+    margin-bottom: 0px;
+    padding: 10px !important;
+  }
+
+  .lsow-portfolio-wrap {
+    margin: 20px 10px;
+    padding: 10px !important;
+  }
+
+  #pg-24-0 {
+    margin-bottom: 20px;
+  }
+
+  #pg-26-0 {
+    margin-bottom: 20px;
+  }
+
+  #pg-28-0 {
+    margin-bottom: 20px;
+  }
+
+  #pg-30-0 {
+    margin-bottom: 20px;
+  }
+
+  #pg-28-2 {
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+
+  .so-widget-sow-image-default-b37b538aacbf .sow-image-container .so-widget-image {
+    padding: 10px 30px;
+  }
+
+  #pgc-10-2-0,
+  #pgc-10-2-1,
+  #pgc-10-2-2,
+  #pgc-10-8-0,
+  #pgc-10-8-1,
+  #pgc-10-8-2,
+  #pl-10 .panel-grid .panel-grid-cell-mobile-last {
+    margin-bottom: 0px;
+    padding: 30px !important;
+  }
+}
+
+.lsow-post-title {
+  display: none;
+}
+
+.lsow-terms {
+  display: none;
+  float: none;
+  visibility: hidden;
+}
+
+.url.fn.n {
+  display: none;
+}
+
+.posted-on {
+  display: none;
+}
+
+.title-post.entry-title {
+  display: none;
+}
+
+.entry-header {
+  display: none;
+}
+
+#wpupg-grid-team-filter.wpupg-filter.wpupg-filter-isotope {
+  padding-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #083766;
+}
+
+#wpupg-grid-team.wpupg-grid {
+  padding-top: 0px;
+  margin-top: 25px;
+  border-width: 11px;
+  border-color: #ab3030;
+}
+
+.wpupg-post-image {
+  visibility: visible;
+}
+
+#wpupg-container-post-264.wpupg-item.wpupg-page-0.wpupg-post-264.wpupg-type-employees.wpupg-tax-category-alumni.wpupg-container {
+  margin: 0px;
+}
+
+.wpupg-post-title {
+  text-align: justify;
+  font-size:1.4em !important;
+  color:#05a6cc !important;
+}
+
+.wpupg-rows-row {
+  text-align: center;
+}
+
+.wpupg-item {
+  border-width: 0px !important;
+  margin: 15px !important;
+}
+
+.wpupg-post-excerpt{
+  font-size:1.1em !important;
+}
