@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "People"
+    url: /people/
+  - title: "News"
+    url: /news/
+  - title: "Join Us"
+    url: /join/
+  - title: "2014–2022 (Chile) archive"
+    url: /legacy-uchile/index.html

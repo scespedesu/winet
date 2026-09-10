@@ -1,0 +1,31 @@
+---
+# only front matter, required so Jekyll processes this as SCSS
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ---- small site-specific tweaks ---- */
+.publication-list,
+.news-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.news-date {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.pub-flag {
+  color: $danger-color;
+  font-size: 0.75em;
+  font-weight: bold;
+}

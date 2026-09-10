@@ -1,59 +1,91 @@
-<header>
+# WiNet — Wireless Networking Research Group
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Source for **https://scespedesu.github.io/winet/**, the site for the WiNet Research Group led by Prof. Sandra Céspedes, Concordia University.
 
-# GitHub Pages
+The site is a [Jekyll](https://jekyllrb.com/) site using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, pulled in automatically via `remote_theme` — GitHub Pages builds and publishes it on every push to `main`. You do **not** need to install anything to edit content; everything below can be done by editing plain text files in the GitHub web UI if you prefer.
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+The site's previous life at Universidad de Chile (2014–2022) is preserved, unchanged, in [`legacy-uchile/`](legacy-uchile/index.html) and linked from the new site's navigation and footer.
 
-</header>
+## One-time setup after you push this
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
--->
+1. In the repo's **Settings → Pages**, set "Source" to **Deploy from a branch**, branch `main`, folder `/ (root)`.
+2. Wait a minute or two for the first build, then visit `https://scespedesu.github.io/winet/`.
+3. Optional but recommended: enable the "Enforce HTTPS" checkbox on the same Settings → Pages screen (usually on by default).
 
-## Step 2: Configure your site
+## Adding a publication
 
-_You turned on GitHub Pages! :tada:_
+Each publication is one file in [`_publications/`](_publications/). Copy an existing one and edit the front matter:
 
-We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
-
-Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
-
-We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
-
-### :keyboard: Activity: Configure your site
-
-1. Browse to the `_config.yml` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
-   ```yml
-   theme: minima
-   ```
-1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
-1. Commit your changes.
-1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
+```yaml
 ---
+title: "Full paper title"
+authors: "S. Céspedes, A. Coauthor, B. Coauthor"
+venue: "Name of journal or conference"
+year: 2026
+type: journal   # journal | conference | preprint | chapter | standard
+verified: true  # set to true once you've checked the author list — removes the [verify] flag
+links:
+  doi: "https://doi.org/..."
+  pdf: "https://..."
+---
+```
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+The filename doesn't matter (it just needs to be unique and end in `.md`) — the publications page sorts everything automatically by year.
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+**Note:** the ~60 publications currently in `_publications/` were auto-drafted from ResearchGate as a starting point. Titles/venues/years should be right, but author order was not verified — please check each one and set `verified: true` as you go (see `scripts/generate_publications.py` for how they were generated, purely for reference — you won't need to run it again for single additions).
 
-</footer>
+## Adding a news item
+
+Add a file to [`_news/`](_news/) named `YYYY-MM-DD-short-title.md`:
+
+```yaml
+---
+title: "Short headline"
+date: 2026-09-10
+---
+Optional longer description.
+```
+
+Delete the `TEMPLATE-*` files in `_news/` once you've added real content, or just leave them as a reference — they won't look out of place, but they're clearly marked.
+
+## Adding a person
+
+Add a file to [`_people/`](_people/):
+
+```yaml
+---
+name: "Full Name"
+role: "PhD Student"          # or MASc Student, Postdoc, Undergraduate Researcher, etc.
+status: current              # current | alumni
+thesis: "Working thesis title"   # optional
+now: "Current position"          # optional, alumni only
+---
+```
+
+Delete the `TEMPLATE-*.md` placeholder files once real people are added.
+
+## Editing other pages
+
+General pages (Home, Research, Join Us) are plain Markdown in [`_pages/`](_pages/) and [`index.md`](index.md) — edit them directly.
+
+## Local preview (optional)
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+then open http://localhost:4000/winet/
+
+## Structure
+
+```
+_config.yml       site settings, theme, navigation collections
+_data/navigation.yml   top navigation menu
+index.md          home page
+_pages/            Research, Publications, People, News, Join Us
+_publications/     one file per paper (collection)
+_news/             one file per news item (collection)
+_people/           one file per person (collection)
+assets/            images, logo, custom CSS tweaks
+legacy-uchile/     archived 2014–2022 Universidad de Chile site, untouched
+```

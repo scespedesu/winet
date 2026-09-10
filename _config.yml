@@ -1,0 +1,121 @@
+# ---------------------------------------------------------------------------
+# WiNet — Wireless Networking Research Group @ Concordia University
+#
+# This site is built with Jekyll + the Minimal Mistakes theme, pulled in
+# automatically from GitHub ("remote_theme") -- there is nothing to install
+# and GitHub Pages builds it for you on every push. See README.md for how
+# to add publications, news, and people.
+# ---------------------------------------------------------------------------
+
+title: "WiNet Research Group"
+title_separator: "-"
+name: "WiNet — Wireless Networking Research Group"
+description: "Wireless Networking Research Group (WiNet), led by Prof. Sandra Céspedes, Concordia University, Montreal, Canada."
+url: "https://scespedesu.github.io"
+baseurl: "/winet"
+locale: "en-US"
+repository: "scespedesu/winet"
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: "default"
+
+# Group / lab identity used across pages
+group_name: "WiNet"
+group_full_name: "Wireless Networking Research Group"
+group_pi: "Prof. Sandra Céspedes"
+# TODO: replace with a dedicated group alias (e.g. winet@concordia.ca) if/when you set one up.
+contact_email: "sandra.cespedes@concordia.ca"
+founded_note: "Founded 2014 at Universidad de Chile · At Concordia University since 2022"
+
+logo: "/assets/images/winet-logo.png"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+
+include: ["_pages"]
+permalink: /:categories/:title/
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+  people:
+    output: true
+    permalink: /people/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "main"
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+
+after_footer_scripts:
+
+footer:
+  links:
+    - label: "Concordia — Dept. of Computer Science & Software Engineering"
+      icon: "fas fa-fw fa-university"
+      url: "https://www.concordia.ca/ginacody/computer-science-software-eng.html"
+    - label: "Prof. Céspedes' personal site"
+      icon: "fas fa-fw fa-user"
+      url: "https://scespedesu.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/scespedesu/winet"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - scripts
+  - node_modules
