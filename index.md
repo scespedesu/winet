@@ -3,57 +3,55 @@ layout: single
 title: "WiNet — Wireless Networking Research Group"
 permalink: /
 header:
-  overlay_color: "#1a2f4b"
+  overlay_image: /assets/images/about-banner-preview7_2.jpg
   overlay_filter: "0.45"
 excerpt: "Advancing dependable connectivity from Earth to space."
 ---
 
 # Wireless Networking Research Group (WiNet)
 
+**Advancing dependable connectivity from Earth to space.**
+
 The **Wireless Networking Research Group (WiNet)** develops communication systems and networking protocols for constrained, remote, and dynamic environments. Our research spans connected transportation systems, the Internet of Things, direct-to-satellite communications, and emerging architectures for near-Earth and deep-space networking.
 
-We design solutions that remain reliable, interoperable, and efficient where conventional networking approaches face limitations. Our work combines theoretical foundations, protocol design, experimental evaluation, Internet standardization, and technology transfer.
-
-WiNet was founded in 2014 by **Prof. Sandra Céspedes** at Universidad de Chile. Since 2022, the group has been based in the [Department of Computer Science and Software Engineering](https://www.concordia.ca/ginacody/computer-science-software-eng.html) Gina School of Engineering and Computer Science, at **Concordia University**, Montreal, Canada.
-
-*(Our 2014–2022 pages from Universidad de Chile remain available in the [legacy site]({{ '/legacy-uchile/index.htmlrl }}.)*
+WiNet was founded in 2014 by **Prof. Sandra Céspedes** in the Department of Electrical Engineering at Universidad de Chile. Since 2022, the group has been based in the [Department of Computer Science and Software Engineering](https://www.concordia.ca/ginacody/computer-science-software-eng.html), Gina Cody School of Engineering and Canada. Our 2014–2022 pages from Universidad de Chile are kept online for reference and can be accessed through the [previous WiNet site]({{ '/legacy-elative_url }}.
 
 ## Research with a Purpose
 
-We believe that connectivity is a key enabler for scientific discovery, sustainable development, and equitable access to technology.
+We believe that connectivity enables scientific discovery, sustainable development, and equitable access to technology.
 
-Our research addresses real-world challenges through communication systems that support safer transportation, resilient IoT deployments, remote and underserved communities, satellite-based connectivity, and future space communication infrastructures. We are particularly interested in networking solutions that operate under severe constraints in terms of energy, bandwidth, mobility, delay, or intermittent connectivity.
+Our work addresses challenges ranging from safer transportation systems and resilient IoT deployments to connectivity for remote and underserved communities and future space communication infrastructures. We design communication systems that remain dependable under severe constraints in bandwidth, energy, mobility, delay, and intermittent connectivity.
 
-## Research Areas
+Our approach combines protocol design, theoretical analysis, experimental evaluation, Internet standardization, and collaboration with academic, community, and industry partners.
 
-### Space and Non-Terrestrial Networking
+## Explore WiNet
 
-Communication protocols and architectures for direct-to-satellite IoT, near-Earth and deep-space networks, delay-tolerant networking, and future multi-planetary communication systems.
+### <{ '/research/' | relative_url }}Research</a>
 
-### Connected Intelligent Systems
+Learn about our research themes, current flagship projects, previous major projects, and long-term vision.
 
-Networking solutions for connected vehicles, vulnerable road users, cyber-physical systems, and next-generation mobility applications.
+### <a href="{{ '/publications/' | relative_urlations</a>
 
-### Protocol Engineering and Internet Systems
+Browse our journal articles, conference papers, Internet standards, technical reports, and patents.
 
-Internet protocol design, interoperability, network optimization, security for constrained environments, and contributions to Internet standards through the IETF.
+### <a '/people/' | relative_url }}People</a>
 
-### Future Communication Infrastructures
+Meet our current students and researchers, collaborators, and alumni.
 
-Networked systems for 5G/6G environments, congestion control, resource management, and dependable communications in highly dynamic networks.
+### <a href="{{ '/newstive_url }}News</a>
 
-See the [Research]({{ '/research/' | relative_url }}) page for more tive projects.
+Read the latest news about our research, publications, awards, presentations, and group activities.
 
-## Join Us
+### <a '/join/' | relative_url }}Join Us</a>
 
-WiNet is always interested in hearing from motivated graduate students, postdoctoral researchers, visiting scholars, and collaborators.
+Learn about graduate studies, research collaborations, and visiting opportunities at WiNet.
 
-Visit {{ '/join/' | relative_url }} for current opportunities, or contact us at **{{ site.contact_email }}**.
+---
 
-## Quick Links
+## Affiliation
 
-- {{ '/research/' | relative_url }}
-- {{ '/publications/' | relative_url }}
-- {{ '/people/' | relative_url }}
-- {{ '/news/' | relative_url }}
-- [Prof. Céspedes' personal site](https://scespedesu.github.io/)
+<p align="center">
+  https://www.concordia.ca/
+    <img
+      src="{{ '/assets/images/Concordia-University-logo.png' | relative_url }}"
+      alt="Concord
